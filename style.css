@@ -2,6 +2,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	
 }
      .contactUs {
 	position: relative;
@@ -9,6 +10,8 @@
 	padding: 40px 100px;
 	display: flex;
 	height: 500px;
+	background:rgba(241, 238, 246, 0.378) ;
+	
 }
     .contactUs .title {
 	display: flex;
@@ -19,7 +22,8 @@
 	color: #000;
 	display: flex;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 24px;
+	font-size: 28px;
+	font-weight: 600;
 }
      .form {
 	grid-area: form;
@@ -38,7 +42,7 @@
 	position: relative;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-	grid-template-rows: 5fr 4fr;
+	
 	grid-template-areas:
 	  "form info"
 	  "form map";
@@ -47,9 +51,12 @@
 }
     .contact-form h3 {
 	color: black;
-	margin-bottom: 10px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 24px;
+	font-size: 38px;
+	font-weight: 700;
+	margin-bottom:30px;
+	
+
 }
 /* form */
     .formBox {
@@ -62,35 +69,35 @@
 }
     .inputBox {
 	display: flex;
-	margin-bottom: 10px;
+	margin-bottom: 13px;
 	flex-direction: column;
 	width: 50%;
 	color: #000;
 }
     .formBox .row100 .inputBox {
 	width: 100%;
-    }
+}
     .inputBox span {
 	color: black;
 	margin-top: 10px;
 	margin-bottom: 5px;
 	font-weight: 500;
-    }
-    .inputBox input {
-	padding: 10px;
-	font-size: 1.1em;
-	outline: none;
-	border: 1px solid #333;
-    }
-    .inputBox textarea {
-	padding: 10px;
-	font-size: 1.1em;
-	outline: none;
-	border: 1px solid #333;
-	resize: none;
-	min-height: 220px;
-	margin-bottom: 10px;
 }
+    .inputBox input ,textarea{
+	padding: 10px;
+	font-size: 1.1em;
+	outline: none;
+	border:2px solid rgba(241, 238, 246, 0.5);
+	background-color: #fff;
+}
+    .inputBox input:hover {
+	border: 2px solid #7377ab;
+}
+   .inputBox input[type="input"]:hover {
+     border: 1px solid #7377ab;
+
+}
+
     .inputBox input[type="submit"] {
 	background:#7377ab;
 	color: #fff;
@@ -98,14 +105,20 @@
 	font-weight: 500;
 	cursor: pointer;
 	padding: 14px 15px;
+	width: 50%;
+	border-radius:0;
+	outline: none;
+	border: none;
  }
      .inputBox::placeholder {
 	color: #000;
+	border: #7377ab;
 }
 .inputBox input[type="submit"]:hover {
 	background: #fff;
 	color: #7377ab;
 	border: 1px solid #7377ab;
+	
 }
       .contactUs .contact-info {
 	display: flex;
@@ -117,8 +130,9 @@
     .contact-info .infoBox .title h3 {
 	color: #000;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 24px;
-	margin-bottom: 40px;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 60px;
 	display: flex;
  }
     .contact-info .infoBox div {
@@ -147,13 +161,8 @@
     .contact-info .infoBox div span i{
 	color: #fff;
 }
-
-.contact-info .infoBox div span:hover{
-	
-	
+    .contact-info .infoBox div span:hover{
 	transform: rotateY(180deg);
-	
-
 }
     .sci {
 	margin-top: 40px;
@@ -184,7 +193,7 @@
     .sci li a i{
 	color: #efe7e7;
 }
-.sci li a i:hover{
+    .sci li a i:hover{
 	color: #fff;
 }
      .container{
@@ -208,7 +217,7 @@
  }
     .container .row .col-md-6 .icon-wrapper {
 	display: flex;
-	padding:5px;
+	padding:0px;
 } 
      .container .row .col-md-6 .icon-wrapper i{
 	font-size: 3rem;
@@ -220,18 +229,21 @@
 	align-items: center;
 	justify-content: center;
 	margin-top: 12px;
+
 }
     .container .row .icon-title h2{
-	font-size: 20px;
+	font-size: 1.2rem;
 	font-family:"DM Sans", sans-serif;
 	font-weight: 300;
 	align-items: center;
 }
     .container p{
-	font-size:22px;
-	padding: 2px;
-	font-weight: 400;
+	font-size:26px;
+	padding: 3px;
+	font-weight: 500;
 	font-family:"DM Sans", sans-serif; 
+	display: inline;
+	margin-left: -3.4px;
  }
      .container button{
 	height:50px;
@@ -244,6 +256,8 @@
 	bottom: 0;
 	border: none;
 	margin-top: 15px;
+	padding: 9px;
+	display: flex;
  }
  .container button:hover{
        background: #7377ab;
